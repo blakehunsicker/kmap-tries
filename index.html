@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<style type="text/css">
+		@font-face {
+			font-family: PostoniDisplay;
+			src: url('fonts/Postoni-Display-Regular/8552d5f6-9170-4b2a-a67f-3b99a8e89257-3.woff') format('woff');
+		}
+		@font-face {
+			font-family: FranklinITCProBold;
+			src: url('fonts/Franklin-ITC-Pro-Bold/e9e4c4dc-e548-4fef-9aa1-80c9cd0f02ce-3.woff') format('woff');
+		}
+		@font-face {
+			font-family: FranklinITCProLight;
+			src: url('fonts/Franklin-ITC-Pro-Light/b147bee6-eb48-46e1-86e1-2538a46794b6-3.woff') format('woff');
+		}
+		@font-face {
+			font-family: FranklinITCProThin;
+			src: url('fonts/Franklin-ITC-Pro-Thin/56bcaf21-92ef-486a-836d-19f261762e57-3.woff') format('woff');
+		}
+		div.frank-thin{
+			font-family: FranklinITCProThin;
+		}
+		div.frank-light{
+			font-family: FranklinITCProLight;
+		}
+		div.frank-bold{
+			font-family: FranklinITCProBold;
+		}
+		div.postoni-display{
+			font-family: PostoniDisplay;
+		}
+		#article-body div.kmap-series-trigger{
+        float: left;
+        position: relative;
+        color: #FFFFFF;
+        max-width:300px;
+        max-height:213px;
+        margin-top: 0.5em;
+        margin-right: 17px;
+        margin-left:50px;                  
+        background-image: url(https://img.washingtonpost.com/rf/image_1484w/2010-2019/WashingtonPost/2015/04/09/Foreign/Images/AP7399198144911428605231.jpg?uuid=2mz8kN7oEeS217m8is8W9w);
+        background-size: cover;
+    }
+    #article-body div.kmap-series-trigger div#img-overlay{
+        position: absolute;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+        background-color: rgba(0,0,0,0.2);
+        -webkit-transition: background-color 0.25s;
+    }
+    #article-body div.kmap-series-trigger:hover{
+        cursor: pointer;
+    }
+    #article-body div.kmap-series-trigger:hover div#img-overlay{
+        background-color: rgba(0,0,0,0.5);
+        -webkit-transition: background-color 0.5s linear;
+        -moz-transition: background-color 0.5s linear;
+        -o-transition: background-color 0.5s linear;
+        -ms-transition: background-color 0.5s linear;
+        transition: background-color 0.5s linear;
+    }
+    #article-body div.kmap-series-trigger div#text-wrap{
+        position: relative;
+        color: #FFFFFF;
+        padding: 1em 1em 1em 1em;
+        margin: 1.6em;
+        border-top: 1px solid #FFFFFF;
+        border-bottom: 1px solid #FFFFFF;
+    }
+    #article-body div.kmap-series-trigger #series-kicker{
+        font-size: 0.8em;
+    }
+    #article-body div.kmap-series-trigger #series-title{
+        font-size: 1.8em;
+        line-height: 1;
+        text-transform: uppercase;
+        padding-top: 0.6em;
+        padding-bottom: 0.6em;
+    }
+    #article-body div.kmap-series-trigger #series-button{
+        position: relative;
+        text-decoration: none;
+        font-size: 1em;
+        cursor: pointer;
+    }
+    #article-body div.kmap-series-trigger:hover div#text-wrap div#series-button span i{
+        color: #F1C4AB;
+        -webkit-transition: color 0.1s linear;
+        -moz-transition: color 0.1s linear;
+        -o-transition: color 0.1s linear;
+        -ms-transition: color 0.1s linear;
+        transition: color 0.1s linear;
+    }
+    #article-body div.kmap-series-trigger.selected > div#img-overlay{
+        background-color: rgba(0,0,0,0.5);
+    }
+    #article-body div.kmap-series-trigger.selected > div#text-wrap div#series-button span i{
+        color: #F1C4AB;
+    }
+    #article-body div.kmap-series-trigger.active #series-button span i{
+        min-width: 1.2em;
+        text-align: left;                                    
+        color: #DCA48D;
+        -webkit-transition: color 0.2s;
+                                         
+    }
+    #article-body div.kmap-series-trigger.selected #series-button{
+        font-size: 1em;
+        cursor: pointer;
+    }
+	</style>
+</head>
+<body>
+	<div id="article-body">
+		<div data-id="kmap-key4" class="kmap-series-trigger">
+	        <div id="img-overlay"></div>
+	        <div id="text-wrap">
+	          <div id="series-kicker">Part of the series</div>
+	          <div id="series-title" class="postoni-display">Confronting the ‘Caliphate’</div>
+	          <div id="series-button" class="kmap-keyword frank-bold"><span><i class="fa fa-plus-circle"></i></span>Show 4 stories</div>
+	        </div>
+	    </div>
+	    <div data-id="kmap-key4" class="kmap-series-trigger">
+	        <div id="img-overlay"></div>
+	        <div id="text-wrap">
+	          <div id="series-kicker">Part of the series</div>
+	          <div id="series-title" class="postoni-display">Confronting the ‘Caliphate’</div>
+	          <div id="series-button" class="kmap-keyword frank-light"><span><i class="fa fa-plus-circle"></i></span>Show 4 stories</div>
+	        </div>
+	    </div>
+	    <div data-id="kmap-key4" class="kmap-series-trigger">
+	        <div id="img-overlay"></div>
+	        <div id="text-wrap">
+	          <div id="series-kicker">Part of the series</div>
+	          <div id="series-title" class="postoni-display">Confronting the ‘Caliphate’</div>
+	          <div id="series-button" class="kmap-keyword frank-thin"><span><i class="fa fa-plus-circle"></i></span>Show 4 stories</div>
+	        </div>
+	    </div>
+	    <div data-id="kmap-key4" class="kmap-series-trigger">
+	        <div id="img-overlay"></div>
+	        <div id="text-wrap">
+	          <div id="series-kicker">Part of the series</div>
+	          <div id="series-title" class="postoni-display">Confronting the ‘Caliphate’</div>
+	          <div id="series-button" class="kmap-keyword"><span><i class="fa fa-plus-circle"></i></span>Show 4 stories</div>
+	        </div>
+	    </div>
+	</div>
+</body>
+</html>
